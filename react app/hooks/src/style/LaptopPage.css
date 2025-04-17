@@ -1,0 +1,78 @@
+/* LaptopPage.css */
+.laptop-page {
+  padding: 20px;
+}
+
+.sort-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.sort-buttons button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #f1f1f1;
+  transition: background-color 0.3s ease;
+}
+
+.sort-buttons button:hover {
+  background-color: #ccc;
+}
+
+.laptop-product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.laptop-product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.laptop-product-image-container {
+  position: relative;
+}
+
+.laptop-product-image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.laptop-hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.laptop-product-image-container:hover .laptop-hover-overlay {
+  opacity: 1;
+}
+
+.laptop-add-to-cart-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ff9800;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.laptop-add-to-cart-btn:hover {
+  background-color: #f57c00;
+}

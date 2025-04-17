@@ -1,0 +1,105 @@
+/* Basic setup */
+.fashion-page {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.sort-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.sort-buttons button {
+  padding: 8px 16px;
+  margin-left: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: #ff9900;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sort-buttons button:hover {
+  background-color: #e68a00;
+}
+
+.fashion-product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.fashion-product-card {
+  position: relative;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.fashion-product-card:hover {
+  transform: scale(1.05);
+}
+
+.fashion-product-image-container {
+  position: relative;
+}
+
+.fashion-product-image-container img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.fashion-hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  padding: 10px;
+}
+
+.fashion-product-card:hover .fashion-hover-overlay {
+  opacity: 1;
+}
+
+.fashion-hover-overlay h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.fashion-hover-overlay p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.fashion-add-to-cart-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.fashion-add-to-cart-btn:hover {
+  background-color: #e68a00;
+}
